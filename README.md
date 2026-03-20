@@ -1,14 +1,13 @@
 # 🧠 Codebase Summarizer
 
-```{=html}
 <p align="center">
-```
-`<img src="https://img.shields.io/badge/LLM-Ready-blue" />`{=html}
-`<img src="https://img.shields.io/badge/Simple-Fast-green" />`{=html}
-`<img src="https://img.shields.io/badge/Multi--Provider-Supported-purple" />`{=html}
-```{=html}
+
+<img src="https://img.shields.io/badge/LLM-Ready-blue" />
+<img src="https://img.shields.io/badge/Simple-Fast-green" />
+<img src="https://img.shields.io/badge/Multi--Provider-Supported-purple" />
+
 </p>
-```
+
 > Turn any codebase into a **ready-to-use prompt for LLMs in seconds**
 
 ------------------------------------------------------------------------
