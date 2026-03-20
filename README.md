@@ -9,18 +9,16 @@
 ```{=html}
 </p>
 ```
-Turn any codebase into a **ready-to-use prompt for LLMs** in seconds.
+> Turn any codebase into a **ready-to-use prompt for LLMs in seconds**
 
 ------------------------------------------------------------------------
 
 ## 🚀 What it does
 
-1.  Scans your project\
-2.  Summarizes each file using an LLM\
-3.  Generates a single `.txt` with:
-    -   folder structure\
-    -   file summaries\
-    -   prompt ready to paste
+-   📂 Scans your project\
+-   🧠 Generates summaries per file (LLM)\
+-   ⚡ Skips unchanged files (hash-based)\
+-   📄 Builds a single prompt ready to paste into any LLM
 
 ------------------------------------------------------------------------
 
@@ -40,13 +38,17 @@ LLM_MODEL=gpt-4o-mini
 MAX_WORDS_DESCRIPTION_PER_FILE=80
 ```
 
-Run CLI:
+------------------------------------------------------------------------
+
+## ▶️ Usage
+
+### CLI
 
 ``` bash
 python script.py
 ```
 
-Run UI (recommended):
+### UI (recommended)
 
 ``` bash
 streamlit run app.py
@@ -56,33 +58,36 @@ streamlit run app.py
 
 ## 🧠 How to use
 
-Open `codebase_summary.txt` and paste into any LLM.
+Open `codebase_summary.txt` and paste into ChatGPT / Claude / DeepSeek.
 
-Ask: - Explain the architecture\
+Ask: - Explain architecture\
 - Suggest improvements\
-- Find problems
+- Find issues
 
 ------------------------------------------------------------------------
 
-## 💡 Why use it
+## 💡 Why this is useful
 
--   Understand large projects fast\
--   Reduce onboarding time\
--   Improve AI-assisted coding
+-   ⚡ Understand large codebases instantly\
+-   🚀 Faster onboarding\
+-   🧠 Better AI-assisted development
 
 ------------------------------------------------------------------------
 
-## 🔄 Flow
+## 🔄 How it works
 
 ``` mermaid
 graph TD
-A[Scan Files] --> B[LLM Summaries]
-B --> C[Hash Check (skip unchanged)]
-C --> D[Aggregate Summaries]
-D --> E[Generate Prompt]
-E --> F[Paste into LLM]
+A[Scan Files] --> B[Generate Summaries]
+B --> C{File Changed?}
+C -->|Yes| D[Regenerate Summary]
+C -->|No| E[Reuse Summary]
+D --> F[Aggregate]
+E --> F
+F --> G[Generate Prompt]
+G --> H[Paste into LLM]
 ```
 
 ------------------------------------------------------------------------
 
-## ⭐ If this helped you, give it a star!
+## ⭐ Star this repo if it helped you!
