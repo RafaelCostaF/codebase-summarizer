@@ -1,0 +1,46 @@
+
+---
+
+# 💼 Post para LinkedIn
+
+Aqui vai uma versão boa (profissional + engajadora):
+
+---
+
+### 🧠 Post
+
+Hoje eu construí uma ferramenta simples, mas extremamente útil para quem trabalha com IA + código.
+
+Basicamente ela:
+
+- Varre um repositório inteiro  
+- Gera resumos estruturados de cada arquivo usando LLM  
+- Monta automaticamente um contexto pronto para análise  
+
+O objetivo foi resolver um problema real:
+
+👉 **Entender codebases grandes rápido (sem perder horas lendo código)**  
+
+Agora eu consigo pegar qualquer projeto, rodar o script e já ter um prompt pronto para pedir:
+
+- análise de arquitetura  
+- sugestões de melhoria  
+- refatorações  
+- identificação de problemas  
+
+Tudo isso com controle de custo (limitando palavras por arquivo) e suporte a múltiplos modelos (OpenAI, DeepSeek, etc).
+
+No fim, virou uma espécie de:
+
+> "tradutor de codebase → linguagem de LLM"
+
+💡 Isso tem acelerado muito:
+- onboarding
+- debugging
+- decisões técnicas
+
+Se alguém quiser brincar com a ideia ou evoluir, vale muito a pena.
+
+---
+
+Se quiser, posso te fazer uma versão mais “viral” ou mais técnica (dependendo do público que você quer atingir).
